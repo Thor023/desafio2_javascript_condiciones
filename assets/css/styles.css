@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'VT323', monospace;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.navbar {
+    position: fixed;
+    text-align: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.content {
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+}
+
+.content-part1 {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    text-align: center;
+    justify-content: center;
+    position: fixed;
+    text-align: center;
+    left: 0;
+    top: 25%;
+    width: 100%;
+}
+
+.bg-gradient { 
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient(45deg,red,rgb(28, 72, 28),rgb(53, 10, 172),blue);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 10s ease infinite;
+}
+
+@keyframes change {
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: white;
+    color: black;
+    transform: .3s;
+}
+
+.footer {
+    position: fixed;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    height: 5vh;
+    background-color: #333;
+}
+
+.no-border-img {
+    border: solid transparent;
+    border-width: 4px;
+    border-radius: 0.5rem;
+}
+
+.border-img {
+    border: solid red;
+    border: width 4px;
+    border-radius: 0.5rem;
+}
+
+.container-card {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    text-align: center;
+    justify-content: center;
+    position: fixed;
+    text-align: center;
+    left: 0;
+    top: 25%;
+    width: 100%;
+}
+
+.container-sticker {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.card {
+    width: 250px;
+    height: 260px;
+    margin: 10px;
+    border: solid lightgray;
+    border-radius: 0.5rem;
+    background-color: white;
+}
+
+.card input {
+    background-color: white;
+    border-color: lightgray;
+    border-radius: 0.5rem;
+    padding-left: 5px;
+    font-size: large;
+}
+
+.card-img {
+    height: 200px;
+    width: auto;
+    margin: 25px;
+    text-align: center;
+}
+
+#img00 {
+    background-image: url('../img/logo_alliance.png');
+    margin-bottom: 5px;
+    background-size: contain;
+}
+
+#img01 {
+    background-image: url('../img/hordelogo.png');
+    margin-bottom: 5px;
+    background-size: contain;
+
+}
+
+#img02 {
+    background-image: url('../img/logo_wow.png');
+    margin-bottom: 5px;
+    background-size: contain;
+}
+
+.verify-button, #stickers-result {
+    text-align: center;
+}
+
+#stickers-result {
+    padding-top: 40px;
+}
+
+.title {
+    font-size: x-large;
+}
+
+.verify-button {
+    padding-top: 20px;
+}
+
+#verify, #clear {
+    border-color: lightgray;
+    border-radius: 0.5rem;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+#clear {
+    margin-top: 2px;
+}
+
+#too-many-stickers {
+    display: none;
+}
+
+.container-login {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    text-align: center;
+    justify-content: center;
+    position: fixed;
+    text-align: center;
+    left: 0;
+    top: 35%;
+    width: 100%;
+}
+
+.sticker-title h1 {
+    font-weight: normal;
+}
+
+.verify-button, .clear-button {
+    font-size: large;
+}
+
+.card-login {
+    width: 200px;
+    height: 140px;
+    border-radius: 0.5rem;
+    background-color: #333;
+}
+
+.title-login {
+    margin: 1rem;
+    color: white;
+}
+
+.submit-button {
+    margin: 1rem;
+}
+
+#submit-pass {
+    background-color: gray;
+    border: none;
+    color: white;
+    padding: 10px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: gray; 
+    border-radius: 0.5rem;
+}
+
+#submit-pass:hover {
+    background-color: gray;
+    color: white;
+}
+
+
+#first-num, #second-num, #third-num {
+    border-color: rgb(152, 147, 147);
+    border-radius: 0.2rem;
+    color: gray;
+}
+
+
